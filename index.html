@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mune Gowda S – Cloud Infrastructure Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--sky1:#5db7f5;--sky2:#c9e9ff;--sky3:#f3faff;--ink:#0d2a4a;--mute:#4b6785;--card:rgba(255,255,255,.78);--line:rgba(255,255,255,.9);--acc:#1677d9;--acc2:#ff9d3c;--cloud:#fff;--cop:.9;--sh:0 10px 30px rgba(22,90,160,.18);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--sky1:#0b1f3d;--sky2:#17386a;--sky3:#26508f;--ink:#eaf4ff;--mute:#a9c3e3;--card:rgba(14,34,66,.72);--line:rgba(140,190,255,.25);--acc:#6cc0ff;--acc2:#ffb35c;--cloud:#8fb6e6;--cop:.22;--sh:0 10px 30px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--sky1:#0b1f3d;--sky2:#17386a;--sky3:#26508f;--ink:#eaf4ff;--mute:#a9c3e3;--card:rgba(14,34,66,.72);--line:rgba(140,190,255,.25);--acc:#6cc0ff;--acc2:#ffb35c;--cloud:#8fb6e6;--cop:.22;--sh:0 10px 30px rgba(0,0,0,.35)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:linear-gradient(180deg,var(--sky1) 0%,var(--sky2) 55%,var(--sky3) 100%) fixed;line-height:1.6}
+h1,h2,h3{font-family:'Sora',system-ui,sans-serif;line-height:1.15;margin:0}
+.sky{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.sky svg{position:absolute;fill:var(--cloud);opacity:var(--cop);animation:drift linear infinite}
+@keyframes drift{from{transform:translateX(-30vw)}to{transform:translateX(130vw)}}
+@media (prefers-reduced-motion:reduce){.sky svg{animation:none}}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;margin:12px auto 0;max-width:1100px;padding:0 12px}
+nav{display:flex;align-items:center;gap:4px;background:var(--card);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:999px;padding:6px 8px;box-shadow:var(--sh);overflow-x:auto}
+nav .logo{display:flex;align-items:center;gap:8px;font:800 15px Sora;padding:4px 12px 4px 6px;color:var(--ink);text-decoration:none;white-space:nowrap}
+nav .logo svg{width:28px;height:28px;color:var(--acc)}
+nav a.l{display:flex;align-items:center;gap:6px;padding:8px 13px;border-radius:999px;color:var(--mute);text-decoration:none;font-weight:500;font-size:14px;white-space:nowrap}
+nav a.l svg{width:18px;height:18px}
+nav a.l:hover{color:var(--ink)}nav a.l.on{background:var(--acc);color:#fff}
+:root[data-theme="dark"] nav a.l.on{color:#06182f}
+#tg{margin-left:auto;border:0;background:none;color:var(--ink);cursor:pointer;padding:6px;border-radius:50%}#tg svg{width:20px;height:20px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
+main{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:36px 16px 80px}
+.page{display:none}.page.on{display:block}
+.card{background:var(--card);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:26px;padding:26px;box-shadow:var(--sh)}
+.grid{display:grid;gap:18px}.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.ic{width:52px;height:52px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--acc),#7fd0ff);color:#fff;flex:none;box-shadow:0 6px 14px rgba(22,119,217,.35)}
+.ic svg{width:28px;height:28px}.ic.o{background:linear-gradient(135deg,var(--acc2),#ffd08a)}
+:root[data-theme="dark"] .ic{color:#06182f}
+h2{font-size:clamp(28px,4.5vw,42px);margin-bottom:6px}.sub{color:var(--mute);margin:0 0 26px;max-width:60ch}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;padding:30px 0 10px}
+.hero h1{font-size:clamp(40px,7vw,76px);letter-spacing:-.03em}
+.role{font:700 clamp(16px,2.2vw,22px) Sora;color:var(--acc);margin:12px 0 16px}
+.hero p{max-width:52ch;color:var(--mute);font-size:17px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--acc);color:#fff;box-shadow:var(--sh)}
+:root[data-theme="dark"] .btn{color:#06182f}
+.btn.s{background:var(--card);color:var(--ink);border:1px solid var(--line)}.btn svg{width:18px;height:18px}
+.rack{display:grid;gap:12px;justify-items:stretch}
+.srv{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 16px;box-shadow:var(--sh);font-weight:700}
+.srv i{width:10px;height:10px;border-radius:50%;background:#35d07f;box-shadow:0 0 0 4px rgba(53,208,127,.25);margin-left:auto}
+.srv svg{width:26px;height:26px;color:var(--acc)}.srv small{font-weight:400;color:var(--mute);display:block}
+.stats{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.stat{flex:1 1 150px}.stat b{font:800 28px Sora;color:var(--acc)}.stat span{display:block;color:var(--mute);font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tag{padding:5px 12px;border-radius:999px;background:rgba(22,119,217,.12);color:var(--acc);font-size:13px;font-weight:700;border:1px solid rgba(22,119,217,.22)}
+.row{display:flex;gap:16px;align-items:flex-start}
+h3{font-size:19px}.card ul{margin:10px 0 0;padding-left:18px;color:var(--mute)}.card li{margin:6px 0}
+.when{color:var(--acc2);font:700 13px Sora;margin-top:4px}
+.tl{position:relative;display:grid;gap:18px;padding-left:34px}
+.tl:before{content:"";position:absolute;left:12px;top:8px;bottom:8px;width:3px;border-radius:3px;background:linear-gradient(var(--acc),var(--acc2))}
+.tl .card{position:relative}.tl .card:before{content:"";position:absolute;left:-30px;top:30px;width:15px;height:15px;border-radius:50%;background:var(--cloud);border:4px solid var(--acc)}
+.sk h3{display:flex;gap:12px;align-items:center;margin-bottom:6px}.sk .ic{width:44px;height:44px;border-radius:15px}.sk .ic svg{width:24px;height:24px}
+.contact a.c{display:flex;gap:14px;align-items:center;text-decoration:none;color:var(--ink);font-weight:700;word-break:break-word}
+.contact small{display:block;color:var(--mute);font-weight:400}
+footer{position:relative;z-index:1;text-align:center;color:var(--mute);font-size:13px;padding:0 0 30px}
+@media (max-width:760px){.hero{grid-template-columns:1fr}nav a.l span{display:none}nav a.l.on span{display:inline}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="cloud" viewBox="0 0 200 100"><path d="M50 95a35 35 0 0 1-5-69 45 45 0 0 1 86-10 38 38 0 0 1 24 79z"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1 0 9z"/><path d="M12 11v5m0 0-2-2m2 2 2-2"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h5v-5h4v5h5v-9"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c1-4 4-6 8-6s7 2 8 6"/></symbol>
+<symbol id="i-chip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></symbol>
+<symbol id="i-brief" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+<symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 1 6 5 6 9l-3 3H9l-3-3c0-4 2-8 6-9z"/><circle cx="12" cy="10" r="1.6"/><path d="M9 15l-2 5 5-2M15 15l2 5-5-2"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c3 2.5 9 2.5 12 0v-4.5M22 9v6"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 10v7M8 7v.01M12 17v-4a2.5 2.5 0 0 1 5 0v4M12 10v7"/></symbol>
+<symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01M12 7h5M12 17h5"/></symbol>
+<symbol id="i-term" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 10l3 2-3 2M12 15h5"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+<symbol id="i-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17a8 8 0 1 1 16 0"/><path d="M12 17l4-6M7 17h.01M17 17h.01"/></symbol>
+<symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14A8 8 0 0 1 10 4a8 8 0 1 0 10 10z"/></symbol>
+<symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+</defs>
+</svg>
+
+<div class="sky" aria-hidden="true">
+<svg viewBox="0 0 200 100" style="top:6%;width:300px;animation-duration:140s;animation-delay:-30s"><use href="#cloud"/></svg>
+<svg viewBox="0 0 200 100" style="top:24%;width:200px;animation-duration:95s;animation-delay:-70s"><use href="#cloud"/></svg>
+<svg viewBox="0 0 200 100" style="top:42%;width:380px;animation-duration:170s;animation-delay:-100s"><use href="#cloud"/></svg>
+<svg viewBox="0 0 200 100" style="top:60%;width:240px;animation-duration:120s;animation-delay:-10s"><use href="#cloud"/></svg>
+<svg viewBox="0 0 200 100" style="top:78%;width:340px;animation-duration:150s;animation-delay:-60s"><use href="#cloud"/></svg>
+<svg viewBox="0 0 200 100" style="top:88%;width:220px;animation-duration:110s;animation-delay:-90s"><use href="#cloud"/></svg>
+</div>
+
+<header><nav aria-label="Main">
+<a class="logo" href="#home"><svg><use href="#i-cloud"/></svg>Mune Gowda</a>
+<a class="l" href="#home"><svg><use href="#i-home"/></svg><span>Home</span></a>
+<a class="l" href="#about"><svg><use href="#i-user"/></svg><span>About</span></a>
+<a class="l" href="#skills"><svg><use href="#i-chip"/></svg><span>Skills</span></a>
+<a class="l" href="#experience"><svg><use href="#i-brief"/></svg><span>Experience</span></a>
+<a class="l" href="#projects"><svg><use href="#i-rocket"/></svg><span>Projects</span></a>
+<a class="l" href="#education"><svg><use href="#i-cap"/></svg><span>Education</span></a>
+<a class="l" href="#contact"><svg><use href="#i-mail"/></svg><span>Contact</span></a>
+<button id="tg" aria-label="Toggle light and dark sky"><svg><use href="#i-moon"/></svg></button>
+</nav></header>
+
+<main>
+<section class="page" id="home">
+<div class="hero">
+<div>
+<h1>Mune Gowda S</h1>
+<div class="role">Cloud Infrastructure Engineer · Cloud Technical Support</div>
+<p>I keep Linux servers, hosting platforms and cloud workloads healthy. I watch the dashboards, read the logs, fix what breaks and write down how I fixed it.</p>
+<div class="btns"><a class="btn" href="#projects"><svg><use href="#i-rocket"/></svg>See my projects</a><a class="btn s" href="#contact"><svg><use href="#i-mail"/></svg>Get in touch</a></div>
+</div>
+<div class="rack" aria-label="Skills at a glance">
+<div class="srv"><svg><use href="#i-server"/></svg><div>Linux VPS &amp; Hosting<small>Ubuntu · RHEL · Alma</small></div><i></i></div>
+<div class="srv"><svg><use href="#i-cloud"/></svg><div>Microsoft Azure<small>VMs · VNets · NSGs</small></div><i></i></div>
+<div class="srv"><svg><use href="#i-gauge"/></svg><div>Prometheus &amp; Grafana<small>Monitoring dashboards</small></div><i></i></div>
+</div>
+</div>
+<div class="stats">
+<div class="card stat"><b>Apr 2026</b><span>Working in a production data centre</span></div>
+<div class="card stat"><b>3</b><span>Roles: engineer, intern, analyst</span></div>
+<div class="card stat"><b>8.01</b><span>CGPA, B.E. Computer Science</span></div>
+</div>
+</section>
+
+<section class="page" id="about">
+<h2>About me</h2><p class="sub">Trainee engineer with hands-on production experience.</p>
+<div class="grid g2">
+<div class="card"><div class="row"><div class="ic"><svg><use href="#i-user"/></svg></div><div><h3>Who I am</h3><p style="color:var(--mute);margin:8px 0 0">Cloud Infrastructure Engineer Trainee supporting Linux-based VPS and web hosting infrastructure. I monitor server health and troubleshoot service and network connectivity issues.</p></div></div></div>
+<div class="card"><div class="row"><div class="ic o"><svg><use href="#i-shield"/></svg></div><div><h3>How I work</h3><p style="color:var(--mute);margin:8px 0 0">Server maintenance, backup and recovery, incident troubleshooting, clear documentation and escalation to the right team member.</p></div></div></div>
+<div class="card"><div class="row"><div class="ic"><svg><use href="#i-term"/></svg></div><div><h3>Strong in</h3><div class="tags"><span class="tag">Linux CLI</span><span class="tag">Log analysis</span><span class="tag">DNS</span><span class="tag">SSH</span><span class="tag">SSL</span><span class="tag">Apache / Nginx</span><span class="tag">SQL basics</span></div></div></div></div>
+<div class="card"><div class="row"><div class="ic o"><svg><use href="#i-gear"/></svg></div><div><h3>Strengths</h3><p style="color:var(--mute);margin:8px 0 0">Structured troubleshooting, written documentation, teamwork and learning new systems fast. Open to 24×7 rotational shifts.</p></div></div></div>
+</div>
+</section>
+
+<section class="page" id="skills">
+<h2>Core competencies</h2><p class="sub">The tools and platforms I use every day.</p>
+<div class="grid g3">
+<div class="card sk"><h3><div class="ic"><svg><use href="#i-cloud"/></svg></div>Cloud platforms</h3><div class="tags"><span class="tag">Azure VMs</span><span class="tag">Resource Groups</span><span class="tag">VNets</span><span class="tag">Storage Accounts</span><span class="tag">NSGs</span><span class="tag">AWS basics</span><span class="tag">Proxmox</span></div></div>
+<div class="card sk"><h3><div class="ic o"><svg><use href="#i-server"/></svg></div>Operating systems</h3><div class="tags"><span class="tag">Ubuntu</span><span class="tag">RHEL</span><span class="tag">AlmaLinux</span><span class="tag">Windows Server</span></div></div>
+<div class="card sk"><h3><div class="ic"><svg><use href="#i-term"/></svg></div>System administration</h3><div class="tags"><span class="tag">Users &amp; groups</span><span class="tag">File permissions</span><span class="tag">Processes</span><span class="tag">Packages</span><span class="tag">Bash scripting</span></div></div>
+<div class="card sk"><h3><div class="ic o"><svg><use href="#i-shield"/></svg></div>Networking &amp; security</h3><div class="tags"><span class="tag">DNS</span><span class="tag">SSH</span><span class="tag">SSL/TLS</span><span class="tag">UFW firewall</span><span class="tag">NSG</span><span class="tag">VPS management</span></div></div>
+<div class="card sk"><h3><div class="ic"><svg><use href="#i-globe"/></svg></div>Web servers</h3><div class="tags"><span class="tag">Apache</span><span class="tag">Nginx</span><span class="tag">cPanel</span><span class="tag">CWP</span></div></div>
+<div class="card sk"><h3><div class="ic o"><svg><use href="#i-gauge"/></svg></div>Monitoring</h3><div class="tags"><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Windows Exporter</span><span class="tag">Log analysis</span></div></div>
+<div class="card sk"><h3><div class="ic"><svg><use href="#i-gear"/></svg></div>Operations</h3><div class="tags"><span class="tag">Backup &amp; recovery</span><span class="tag">Server migration</span><span class="tag">Incident management</span><span class="tag">Documentation</span></div></div>
+<div class="card sk"><h3><div class="ic o"><svg><use href="#i-db"/></svg></div>Data</h3><div class="tags"><span class="tag">SQL</span><span class="tag">Power BI</span></div></div>
+</div>
+</section>
+
+<section class="page" id="experience">
+<h2>Work experience</h2><p class="sub">From data analytics to cloud support in a live data centre.</p>
+<div class="tl">
+<div class="card"><h3>Cloud Infrastructure Engineer Trainee · Trijit Technology</h3><div class="when">Apr 2026 – Present</div><ul><li>Support Linux VPS and hosting servers in a production data-centre, keeping systems stable and services available.</li><li>Check server health with Linux utilities, dashboards and logs; investigate CPU, memory, disk, service and connectivity issues.</li><li>Troubleshoot Apache/Nginx, DNS, SSH and SSL certificates; document findings and escalate when needed.</li><li>Monitor performance with Prometheus, Grafana and Windows Exporter to spot abnormal resource usage.</li><li>Assist with backup, recovery, server migration, maintenance and SOP documentation.</li></ul></div>
+<div class="card"><h3>Cloud Engineer Intern · Besant Technology</h3><div class="when">Jul 2025 – Mar 2026</div><ul><li>Built a Linux foundation: file systems, users, permissions, processes, packages and Bash scripting.</li><li>Provisioned Azure VMs, Resource Groups, Storage Accounts and Virtual Networks for cloud projects.</li><li>Completed structured training on core Azure and AWS services.</li></ul></div>
+<div class="card"><h3>Data Analytics Intern · TAKE IT SMART Pvt Ltd.</h3><div class="when">Apr 2025 – Jun 2025</div><ul><li>Built interactive Power BI dashboards for data-driven decisions.</li><li>Used SQL to extract, clean and transform datasets.</li><li>Ran trend analysis on user interaction data to produce business insights.</li></ul></div>
+</div>
+</section>
+
+<section class="page" id="projects">
+<h2>Projects</h2><p class="sub">Hands-on builds that mirror real infrastructure work.</p>
+<div class="grid g3">
+<div class="card"><div class="ic"><svg><use href="#i-gauge"/></svg></div><h3 style="margin-top:14px">IT Infrastructure Monitoring &amp; Troubleshooting</h3><ul><li>Tracked CPU, memory, disk and service uptime with Prometheus and Grafana.</li><li>Debugged services and network issues using systemctl, journalctl, SSH, DNS and TCP/IP.</li><li>Resolved incidents and documented each fix.</li></ul><div class="tags"><span class="tag">Ubuntu</span><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">UFW</span><span class="tag">Bash</span></div></div>
+<div class="card"><div class="ic o"><svg><use href="#i-globe"/></svg></div><h3 style="margin-top:14px">Linux Web Hosting &amp; Server Administration</h3><ul><li>Ran hosting environments with CWP and cPanel.</li><li>Deployed websites on Apache and Nginx with DNS and SSL set up.</li><li>Fixed site connectivity, services, permissions and packages.</li></ul><div class="tags"><span class="tag">AlmaLinux</span><span class="tag">Ubuntu</span><span class="tag">CWP</span><span class="tag">cPanel</span><span class="tag">SSL</span></div></div>
+<div class="card"><div class="ic"><svg><use href="#i-cloud"/></svg></div><h3 style="margin-top:14px">Azure Virtual Machine Administration</h3><ul><li>Built Ubuntu and Windows VMs with Resource Groups, VNets, subnets and NSGs.</li><li>Set up SSH and RDP access and managed storage.</li><li>Monitored performance, applied updates, managed users and practised backup and recovery.</li></ul><div class="tags"><span class="tag">Azure</span><span class="tag">VNets</span><span class="tag">NSGs</span><span class="tag">SSH</span><span class="tag">RDP</span></div></div>
+</div>
+</section>
+
+<section class="page" id="education">
+<h2>Education</h2><p class="sub">An engineering path from diploma to degree.</p>
+<div class="tl">
+<div class="card"><h3>B.E. in Computer Science and Engineering</h3><div class="when">2025</div><p style="color:var(--mute);margin:8px 0 0">C Byre Gowda Institute of Technology (VTU) · CGPA 8.01</p></div>
+<div class="card"><h3>Diploma in Computer Science and Engineering</h3><div class="when">2022</div><p style="color:var(--mute);margin:8px 0 0">Government Polytechnic College</p></div>
+<div class="card"><h3>SSLC</h3><div class="when">2019</div><p style="color:var(--mute);margin:8px 0 0">Sri G.G Venu Rural Development High School</p></div>
+</div>
+</section>
+
+<section class="page" id="contact">
+<h2>Let’s talk</h2><p class="sub">Open to cloud infrastructure and technical support roles, including 24×7 rotational shifts.</p>
+<div class="grid g2 contact">
+<div class="card"><a class="c" href="mailto:munegowdakanadiga@gmail.com"><div class="ic"><svg><use href="#i-mail"/></svg></div><div><small>Email</small>munegowdakanadiga@gmail.com</div></a></div>
+<div class="card"><a class="c" href="tel:+918904543118"><div class="ic o"><svg><use href="#i-phone"/></svg></div><div><small>Phone</small>8904543118</div></a></div>
+<div class="card"><a class="c" href="https://www.linkedin.com/in/mune-gowda-s-74017b242" target="_blank" rel="noopener"><div class="ic"><svg><use href="#i-in"/></svg></div><div><small>LinkedIn</small>Mune Gowda S</div></a></div>
+<div class="card"><div class="c" style="display:flex;gap:14px;align-items:center;font-weight:700"><div class="ic o"><svg><use href="#i-pin"/></svg></div><div><small style="color:var(--mute);font-weight:400">Location</small>Bengaluru, Karnataka</div></div></div>
+</div>
+</section>
+</main>
+<footer>© 2026 Mune Gowda S</footer>
+
+<script>
+(function(){
+var ids=['home','about','skills','experience','projects','education','contact'];
+function show(){
+  var h=(location.hash||'#home').slice(1);if(ids.indexOf(h)<0)h='home';
+  ids.forEach(function(i){document.getElementById(i).classList.toggle('on',i===h)});
+  document.querySelectorAll('nav a.l').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+h)});
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',show);show();
+document.getElementById('tg').addEventListener('click',function(){
+  var r=document.documentElement,dark=getComputedStyle(r).getPropertyValue('--cop').trim()==='.22';
+  r.setAttribute('data-theme',dark?'light':'dark');
+});
+})();
+</script>
+</body>
+</html>
